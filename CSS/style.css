@@ -1,0 +1,27 @@
+   /* 3 selectors - tagname,classname,id */
+   /* tagname */
+   h4 {
+       color: salmon;
+       background-color: blanchedalmond;
+       font-size: 35px;
+   }
+
+   /* id name */
+   #txt {
+       color: rgba(24, 164, 143, 0.781);
+       background-color: rgb(187, 166, 89);
+       height: 100px;
+       width: 100px;
+   }
+
+   /* classname */
+   .box {
+       height: 300px;
+       width: 400px;
+       background-color: chocolate;
+       border: 29px double rgba(167, 79, 59, 0.847);
+       /* border-width: 2px;
+            border-color: rebeccapurple;
+            border-style: solid dotted dashed double; */
+       /* display: block; */
+   }
