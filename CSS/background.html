@@ -2,19 +2,45 @@
     <head>
         <title>background</title>
     </head>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
 <style>
-    .box{
+    .box{ 
         background-image:url('wp12173094-suzume-wallpapers.jpg');
-        height:50%;
-        width: 50%;
+        height:100%;
+        width: 100%;
         border: 1cap;
+        background-clip: content-box;
+        background-position: 10%;
+        background-attachment: fixed;
+        background-size: contain;
+        background-position-x: center;
+        background-position-y: top;
     }
+    
+    @font-face {
+        font-family: "mycstfont";
+        src: url('DancingScript-VariableFont_wght.ttf');
+    }
+    
+    .larry{
+        font-family: "mycstfont";
+    }
+        
 </style>
 <body>
-    <p class="box">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatum, odit laborum vero fugit hic aut laboriosam labore minus voluptas nulla rem voluptate doloribus tenetur. Inventore iure quidem esse eaque! Quia!</p>
-    <br>
-    <br><p class="box">Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, quas. Reiciendis nam harum aperiam. Praesentium nihil odio in, numquam iste accusantium placeat possimus ea dignissimos temporibus quia. Cum, deleniti </p>
-    <br><br>
+    <div class="box, larry">
+    <p>Suzume no Tojimari (known as "Suzume") is a 2022 Japanese animated fantasy film directed by Makoto Shinkai. It tells the
+    story of Suzume Iwato, a 17-year-old high school girl living with her aunt in Kyushu, who discovers her hidden
+    connection to supernatural disasters that threaten Japan</p>
+    </div>
+
+
+    <p class="box">Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, quas. Reiciendis nam harum aperiam. Praesentium nihil odio in, numquam iste accusantium placeat possimus ea dignissimos temporibus quia. Cum, deleniti </p>
+
+
     <p class="box">Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo a maiores inventore odio at qui, debitis, saepe nemo veniam adipisci eaque vero voluptas quasi, neque earum recusandae? Possimus, rerum repudiandae!</p>
 </body>
     </html>
