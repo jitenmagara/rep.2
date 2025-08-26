@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>3x3 Product Grid</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            padding: 40px;
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            /* 3 equal columns */
+            grid-gap: 20px;
+            /* spacing between grid items */
+        }
+
+        .product-card {
+            background-color: #fff;
+            border-radius: 10px;
+            transform: rotate(90deg);
+            overflow: hidden;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .product-card:hover {
+            transform: skewX(8deg);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+        }
+
+        .product-image {
+            width: 100%;
+            height: auto;
+            object-fit: contain;
+            display: block;
+            max-height: 200px;
+        }
+
+        .product-info {
+            padding: 15px;
+        }
+
+        .product-title {
+            font-size: 1.1rem;
+            margin-bottom: 10px;
+            color: #333;
+        }
+
+        .product-price {
+            font-weight: bold;
+            color: #2a9d8f;
+            font-size: 1rem;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="grid-container">
+        <!-- Repeat this card 9 times for 3x3 -->
+        <div class="product-card">
+            <img src="https://img.freepik.com/free-psd/close-up-delicious-apple_23-2151868338.jpg?semt=ais_hybrid&w=740&q=80"
+                alt="Product 1" class="product-image">
+            <div class="product-info">
+                <div class="product-title">Apple</div>
+                <div class="product-price">INR 199</div>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <img src="https://fruitique.in/cdn/shop/products/14_750x810.jpg?v=1627403170" alt="Product 2"
+                class="product-image">
+            <div class="product-info">
+                <div class="product-title">Banana</div>
+                <div class="product-price">INR 159</div>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <img src="https://png.pngtree.com/png-vector/20250613/ourmid/pngtree-clipart-of-an-orange-fruit-with-transparent-background-a-png-image_16533683.png"
+                alt="Product 3" class="product-image">
+            <div class="product-info">
+                <div class="product-title">Orange</div>
+                <div class="product-price">INR 249</div>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <img src="https://www.theproducemoms.com/wp-content/uploads/2022/01/kiwi.png" alt="Product 4"
+                class="product-image">
+            <div class="product-info">
+                <div class="product-title">Kiwi</div>
+                <div class="product-price">INR 229</div>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <img src="https://farmfreshfundraising.com/wp-content/uploads/2017/10/271156-grapes.jpg" alt="Product 5"
+                class="product-image">
+            <div class="product-info">
+                <div class="product-title">Grape</div>
+                <div class="product-price">INR 259</div>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRmEuiflAIZTa9nxUvuMsgvyU89R44LkJrl6g&s"
+                alt="Product 6" class="product-image">
+            <div class="product-info">
+                <div class="product-title">Melon</div>
+                <div class="product-price">INR 299</div>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <img src="https://m.media-amazon.com/images/I/61N7iqjDGcL._UF1000,1000_QL80_.jpg" alt="Product 7"
+                class="product-image">
+            <div class="product-info">
+                <div class="product-title">Avacado</div>
+                <div class="product-price">INR 349</div>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <img src="https://aranyaani.in/cdn/shop/products/Guavas_2048x.jpg?v=1575715370" alt="Product 8"
+                class="product-image">
+            <div class="product-info">
+                <div class="product-title">Guava</div>
+                <div class="product-price">INR 269</div>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQjKCYvEDHsRE85s_5O2_0Cs6ElcworzHbvUA&s"
+                alt="Product 9" class="product-image">
+            <div class="product-info">
+                <div class="product-title">Cherry</div>
+                <div class="product-price">INR 299</div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
