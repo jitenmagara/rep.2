@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let num = 153;
+            let a = Math.floor(num / 100);       
+            let b = Math.floor((num % 100) / 10);
+            let c = num % 10;                    
+
+            let result = (a * a * a) + (b * b * b) + (c * c * c);
+
+            if (result === num) {
+                document.write(num + " is an Armstrong number");
+            } else {
+                document.write(num + " is not an Armstrong number");
+            }
+
+    </script>
+</body>
+</html>
