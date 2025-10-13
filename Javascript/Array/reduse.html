@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let arr = ['abc', 'xyz', 'swp', 'kli', 'abc', 'xyz', 'swp'];
+
+            let f = arr.reduce((j, k) => {
+                j[k] = (j[k] || 0) + 1;// || is logical OR
+                return j;
+            }, {});
+
+            console.log(f);
+
+    </script>
+</body>
+</html>

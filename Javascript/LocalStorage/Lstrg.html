@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="demo">
+        <button onclick="setData()">set Data</button>
+        <button onclick="display()">Display Data</button>
+        <button onclick="delData()">Delete Age</button>
+        <button onclick="delAll()">Delete all</button>
+    </div>
+    <script>
+        const setData = ()=>{
+            localStorage.setItem('name','aby')
+            localStorage.setItem('last name','shaw')
+            localStorage.setItem('age',27)
+            localStorage.setItem('salary',27000)
+        }
+        const display = ()=>{
+           let a = localStorage.getItem('name')
+           let b = localStorage.getItem('last name')
+           let c = localStorage.getItem('age')
+           let d = localStorage.getItem('salary')
+
+            document.getElementById('demo').innerHTML ='Name is' + a
+            document.getElementById('demo').innerHTML += '<br>last name is' + b
+            document.getElementById('demo').innerHTML += '<br>age is' + c
+            document.getElementById('demo').innerHTML += '<br>salary is' + d
+        }
+        const delData =()=>{
+            localStorage.removeItem('age')
+        }
+        const delAll = ()=>{
+            localStorage.clear()
+        }
+    </script>
+</body>
+</html>
