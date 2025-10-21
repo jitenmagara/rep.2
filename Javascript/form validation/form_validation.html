@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .error{
+            font-style: oblique;
+            color: darkred;
+        }
+    </style>
+</head>
+<body>
+    <form action="#" method="post" name="frm" onsubmit="return checkData()">
+        <label for="">Name</label>
+        <input type="text" name="name" id="name">
+        <span id="nameErr" class="error"></span>
+<br><br>
+        <label for="">Mobile/label>
+        <input type="text" name="mobile" id="age">
+        <span id="mobileErr" class="error"></span>
+<br><br>
+        <label for="">Email</label>
+        <input type="email" name="email" id="email">
+        <span id="emailErr" class="error"></span>
+<br><br>
+        <label for="">Password</label>
+        <input type="password" name="password" id="password">
+        <span id="passErr" class="error"></span>
+<br><br>
+        <input type="submit" value="save">
+    </form>
+
+    <script>
+
+         let status = 0
+        const checkData = ()=>{
+
+            document.getElementById("nameErr").innerHTML = ""
+            document.getElementById("mobileErr").innerHTML = ""
+            document.getElementById("emailErr").innerHTML = ""
+            document.getElementById("passErr").innerHTML = ""
+
+            let nm = document.frm.name.value
+            let mobile= document.frm.mobile.value
+            let email= document.frm.email.value
+            let password= document.frm.password.value
+
+           
+            if(nm==""){
+                document.getElementById("nameErr").textContent = "Name is required";
+                status = 1;
+            }
+            if(mobile=""){
+                document.getElementById("mobileErr").textContent = "mobile number is required"
+                status = 1;
+            }
+            if(email=""){
+                document.getElementById("emailErr").textContent = "email is required"
+                status = 1;
+            }
+            if(password=""){
+                document.getElementById("passErr").textContent = "password is required"
+                status = 1;
+            }
+            
+        }
+    </script>
+</body>
+</html>
